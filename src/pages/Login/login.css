@@ -1,0 +1,19 @@
+.container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+.center {
+    text-align: center;
+}
+
+.label {
+    margin-right: 5px;
+}
+
+.form {
+    text-align: right;
+    margin-bottom: 20px;
+}
