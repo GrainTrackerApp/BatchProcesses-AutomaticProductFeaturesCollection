@@ -1,0 +1,40 @@
+.html {
+    background-color: blue;
+}
+
+.container {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+    border: 1.5px solid rgba(0, 0, 0, 0.200);
+    margin-left: 35%;
+    margin-right: 35%;
+    /* background-color: #4252AF; */
+}
+
+.center {
+    text-align: center;
+}
+
+.label {
+    margin-right: 5px;
+}
+
+.form {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.rahmen {
+    border: 1px solid #FFFFFF;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: blue;
+}
