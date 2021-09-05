@@ -1,52 +1,38 @@
 import axios from 'axios';
 import './add.css';
 
-import React,{Component} from 'react';
+import React, {Component} from "react";
+
+
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+
 
 const data = [
   {
-    name: 'Page A',
-    uv: 4000,
-    pv: 2400,
-    amt: 2400,
+    name: 'Maize',
+    bg: 400,
+    ug: 240,
+
   },
   {
-    name: 'Page B',
-    uv: 3000,
-    pv: 1398,
-    amt: 2210,
+    name: 'Roggen',
+    bg: 300,
+    ug: 140,
+
   },
   {
-    name: 'Page C',
-    uv: 2000,
-    pv: 9800,
-    amt: 2290,
+    name: 'Triticale',
+    bg: 200,
+    ug: 180,
+
   },
   {
-    name: 'Page D',
-    uv: 2780,
-    pv: 3908,
-    amt: 2000,
+    name: 'Wheat',
+    bg: 278,
+    ug: 390,
+
   },
-  {
-    name: 'Page E',
-    uv: 1890,
-    pv: 4800,
-    amt: 2181,
-  },
-  {
-    name: 'Page F',
-    uv: 2390,
-    pv: 3800,
-    amt: 2500,
-  },
-  {
-    name: 'Page G',
-    uv: 3490,
-    pv: 4300,
-    amt: 2100,
-  },
+
 ];
 
 
@@ -126,11 +112,13 @@ class Add extends Component {
 	
 
 		<div className="App">
-			   <ResponsiveContainer width="100%" height="100%">
+			<div>
+			<h2>number of broken/unbroken grains</h2>
+			   <ResponsiveContainer width="50%" aspect={2}>
         <BarChart
           width={500}
           height={300}
-          data={data}
+          data={data}      
           margin={{
             top: 5,
             right: 30,
@@ -142,10 +130,12 @@ class Add extends Component {
           <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
-          <Legend />
-          <Bar dataKey="pv" fill="#8884d8" />
-          <Bar dataKey="uv" fill="#82ca9d" />
+		  <Legend />
+  
+          <Bar dataKey="bg" fill="#8884d8" />    // bg: broken grains
+          <Bar dataKey="ug" fill="#82ca9d" /> // ug: unbroken grains"
         </BarChart>
+
       </ResponsiveContainer>
 	  
 			<h1 id="Add-headline">
@@ -161,6 +151,7 @@ class Add extends Component {
 				</button>
 			</div>
 		{this.fileData()}
+		</div>
 		</div>
 	);
 	}

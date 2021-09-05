@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+h2 {
+text-align: left;
+margin-left: 250px;
+    
+}
 
 #Add-headline {
     margin-top: 50px;
