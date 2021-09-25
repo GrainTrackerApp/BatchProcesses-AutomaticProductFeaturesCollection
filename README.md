@@ -1,13 +1,19 @@
 # Grain Tracker 🌾 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) and Firebase to provide security and to help to build and run successfully the app.
 
 ## The Project
 
 Crushing of raw material is an important process step in mixed feed production. It leads to the required product structure, which is relevant for mixing and pelleting. In addition, crushing increases the particle surface area and thus also contributes to improved nutrient uptake by the animals.
 In a compound feed mill, after the grain crushing process, the unbroken grain cereals are to be detected using an AI camera. In this systems engineering project, we developed a client-server system that automatically outputs the uncrushed grains via a USB StreamCam with an AI, so that engineers can subsequently use these results for optimal process parameter adjustment.
 
+<br>
+<img src="https://github.com/JHamudi/Lehrprojekt_21-22/blob/main/public/images/img-9.jpg"/>
+<br>
+
+
 ## <a href="https://tracker-2baa0.firebaseapp.com/Menu">Global link to the website</a>
+<br>
 
 ## Available Scripts
 
