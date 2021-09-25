@@ -18,7 +18,7 @@ const Contact = () => {
         <div className="contact">
 
         <div>
-            <h2>Students:</h2>
+            <h2 class="left">Students:</h2>
                 <ul>
                     <li>jaber@uni-bremen.de</li>
                     <li>i.erdogan99@outlook.de</li>
@@ -27,7 +27,7 @@ const Contact = () => {
             </div> 
             <br></br>
             <div>
-            <h2>Supervisor:</h2>
+            <h2 class="left">Supervisor:</h2>
                 <ul>
                     <li>malvela@uni-bremen.de</li>
                     <li>thoben@uni-bremen.de</li>

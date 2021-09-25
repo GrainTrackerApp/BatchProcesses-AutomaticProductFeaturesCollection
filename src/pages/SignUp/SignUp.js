@@ -1,8 +1,14 @@
 import React, {useCallback} from "react";
-import { withRouter} from "react-router";
+import { withRouter, Link} from "react-router";
 import app from "../../Firebase/firebase-config";
 import './signup.css';
+import { useHistory } from "react-router-dom";
+import Header from "../../components/Header";
+
 // import '../../components/Navbar.js';
+
+
+
 
 
 const SignUp = ({history}) => {
@@ -19,13 +25,22 @@ const SignUp = ({history}) => {
         }
     }, [history]);
 
-
     
-    return (
 
+
+    return (
+       
+        
+      
+
+<>
+        <Header />
 
 <div class="container" >
+
+
         <div class="center">
+   
 
         <div>
             <h1>Sign Up</h1>
@@ -42,14 +57,25 @@ const SignUp = ({history}) => {
                     
                 </label>
                 <input name ="password" type="password" placeholder="Password" />
+                
                 </div>
-                <button type ="submit">Sign Up</button>
+                
+              
+                <button type ="submit">Sign Up</button> <br></br><br></br>
+               
+               
+               
                 </form>
+                <div class="return"></div>
+                <button onClick={() => history.goBack()}>Return</button>
+
+              
+
         </div>
 
         </div>
     </div>
-    );
+   </> );
  };
 
 export default withRouter(SignUp);
