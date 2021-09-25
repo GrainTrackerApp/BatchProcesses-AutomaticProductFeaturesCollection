@@ -6,6 +6,10 @@
   h1 {
     text-align: center;
   }
+
+  h3 {
+    text-align: center;
+  }
   
   .cards__container {
     display: flex;
@@ -23,6 +27,7 @@
   
   .cards__items {
     margin-bottom: 24px;
+    
   }
   
   .cards__item {

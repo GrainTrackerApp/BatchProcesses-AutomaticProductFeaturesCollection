@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import CardItem from './CardItem';
 
 import './projekt.css';
+import Footer from "./Footer";
 
 const Projekt = () => {
 
@@ -30,6 +31,7 @@ const Projekt = () => {
               label='Fu2-Experte'
               path='/projekt'
             />
+            <br></br><br></br><br></br>
             <CardItem
               src='images/img-2.jpg'
               text='The company Austing Mischfutterwerk GmbH & Co. KG manufactures compound feed. 
@@ -51,14 +53,16 @@ const Projekt = () => {
 
               
             />
+             <br></br><br></br><br></br>
             <CardItem 
               src='images/img-3.jpg'
               text='Grinding of the raw material is an important process step in the manufacture of mixed feed. 
               It leads to the required product structure, which is relevant for mixing and pelleting. 
               In addition, crushing increases the particle surface and thus also contributes to improved nutrient uptake by the animals.'
-              label='Mischfutterherstellung'
+              label='Mixed feed production'
               path='/projekt'
             />
+             <br></br><br></br><br></br>
             <CardItem
               src='images/img-4.jpg'
               text='In a mixed feed manufacturing, after the grain crushing process, 
@@ -66,12 +70,12 @@ const Projekt = () => {
               In this systems engineering project, a client-server system is to be developed that automatically 
               detects or outputs the grains that have not been crushed via a USB StreamCam with an AI, so that 
               engineers can subsequently use these results for optimal process parameter settings.'
-              label='KI-Kamera'
+              label='AI-Camera'
               path='/contact'
             />
-
-</div>
+            </div>
      
+     <Footer></Footer>
         </>
     );
 

@@ -6,44 +6,7 @@
     justify-content: center;
     align-items: center;
   }
-  
-  .footer-subscription {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
-    margin-bottom: 24px;
-    padding: 24px;
-    color: #fff;
-  }
-  
-  .footer-subscription > p {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
-      'Lucida Sans', Arial, sans-serif;
-  }
-  
-  .footer-subscription-heading {
-    margin-bottom: 24px;
-    font-size: 24px;
-  }
-  
-  .footer-subscription-text {
-    margin-bottom: 24px;
-    font-size: 20px;
-  }
-  
-  .footer-input {
-    padding: 8px 20px;
-    border-radius: 2px;
-    margin-right: 10px;
-    outline: none;
-    border: none;
-    font-size: 18px;
-    margin-bottom: 16px;
-    border: 1px solid #fff;
-  }
+ 
   
   .footer-links {
     width: 100%;
@@ -55,6 +18,7 @@
   .footer-link-wrapper {
     display: flex;
   }
+
   
   .footer-link-items {
     display: flex;
@@ -64,13 +28,14 @@
     text-align: left;
     width: 160px;
     box-sizing: border-box;
+    
   }
   
-  .footer-link-items h2 {
+  .footer-link-items h3 {
     margin-bottom: 16px;
   }
   
-  .footer-link-items > h2 {
+  .footer-link-items > h3 {
     color: #fff;
   }
   
@@ -85,7 +50,7 @@
     transition: 0.3s ease-out;
   }
   
-  .footer-email-form h2 {
+  .footer-email-form h3 {
     margin-bottom: 2rem;
   }
   

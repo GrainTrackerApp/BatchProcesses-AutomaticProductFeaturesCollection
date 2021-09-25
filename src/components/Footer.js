@@ -13,12 +13,12 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <h2>About Us</h2>
+            <h3>About Us</h3>
             <Link to='/contact'>The Team</Link>
             <Link to='/contact'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
-            <h2>Contact Us</h2>
+            <h3>Contact Us</h3>
             <Link to='/contact'>Contact</Link>
             <Link to='/contact'>Support</Link>
           </div>
@@ -26,8 +26,8 @@ function Footer() {
         <div className='footer-link-wrapper'>
           
           <div class='footer-link-items'>
-            <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
+            <h3>Social Media</h3>
+            <a href="https://www.instagram.com/_ibrah__/?hl=de">Instagram</a>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
             <Link to='/'>Twitter</Link>
