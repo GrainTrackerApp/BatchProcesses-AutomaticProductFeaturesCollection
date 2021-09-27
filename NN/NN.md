@@ -45,11 +45,7 @@
     id: 1
     name: 'cat'
 }
-
-item {
-    id: 2
-    name: 'dog'
-}`
+`
     <h3>Erstellen der TensorFlow Records</h3>
       1. `conda install pandas`
       2. `python generate_tfrecord.py -x [PATH_TO_IMAGES_FOLDER]/train -l [PATH_TO_ANNOTATIONS_FOLDER]/label_map.pbtxt -o [PATH_TO_ANNOTATIONS_FOLDER]/train.record`
