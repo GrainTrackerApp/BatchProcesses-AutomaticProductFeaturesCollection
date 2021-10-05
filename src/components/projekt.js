@@ -5,6 +5,7 @@ import CardItem from './CardItem';
 import './projekt.css';
 import Footer from "./Footer";
 
+
 const Projekt = () => {
 
     return (
@@ -12,47 +13,42 @@ const Projekt = () => {
      
         <>
          <Navbar />
-         <h1>Project</h1>
+         <h1>About the Project</h1>
          <div className = "cards">
 
 
         
          <CardItem 
-              src='images/img-9.jpg'
-              text='In the Fu2-Experte project, researchers at the University of Bremen are working together with a feed manufacturer in Lower Saxony to 
-              feed manufacturer to increase the energy efficiency of the animal feed production process. 
-              To this end, they are developing a computer-supported expert system that uses the experience of employees 
-              for adaptive process control and additionally balances and optimizes the energy flows with an extensive 
-              measurement technology to balance and optimize energy flows. The system is to recognize the relations between input products, 
-              process control and product quality and provide timely recommendations for process control.'
-
-                                /* Eventuell noch Links setzen*/
-
-              label='Fu2-Experte'
+              src='images/img-8.jpg'
+              text='ecoKI is an online platform with the goal of enabling a low-threshold and fast entrance of AI for the increase of 
+              energy efficiency in the production.
+              ecoKI provides tools, knowledge and infrastructure for the use of digitization and AI in a user-friendly way.
+              ecoKI contributes networking opportunities with professionals and AI experts.
+              The hurdles in the operational application of AI and digitization for SMEs are high.
+              The path from prototype out of the research lab to productive use in companies is time-consuming and cost-intensive.
+              ecoKI aims to reduce these hurdles!'                        
+              label='ecoKI'
               path='/projekt'
             />
             <br></br><br></br><br></br>
             <CardItem
               src='images/img-2.jpg'
-              text='The company Austing Mischfutterwerk GmbH & Co. KG manufactures compound feed. 
-              Mixed feed is a product manufactured according to the most modern scientific 
-              which is specifically geared to the respective needs and performance of the 
-              performance of the livestock and provides them optimally with nutrients.
-              nutrients. 
-              A total of 19 people are employed in the office and in production. 
-              19 employees, some of whom work in three shifts around the clock. 
-              around the clock. 
-              Given the relatively small number of employees, the
-               production figures (245,000 metric tons per year) can be achieved 
-               The relatively small number of employees makes it possible to achieve the remarkable production figures (245,000 tons per year) because all processes are highly mechanized and automated.'
-
-                              /* Eventuell noch Links setzen*/
-
-              label='Austing'
+              text='The KIPro project is investigating how an AI-supported platform can improve energy efficiency in industrial plants. 
+              The focus is particularly on small and medium-sized enterprises (SMEs).
+              The targeted platform is composed of various solution components with special consideration of the use of 
+              methods of artificial intelligence. The goal is to provide transparency of energy use, suggestions for optimized processes and a simple 
+              processes and a simple user interface to reduce primary energy consumption. Current energy management systems record 
+              exclude energy data, present it and determine key figures for evaluation. The KIPro project uses this prepared 
+              knowledge to support production staff in making decisions on the choice of process parameters for energy-efficient production. 
+              energy-efficient production.'
+              label='KIPro'
               path='/projekt'
+              
 
               
             />
+           
+            
              <br></br><br></br><br></br>
             <CardItem 
               src='images/img-3.jpg'
@@ -71,16 +67,28 @@ const Projekt = () => {
               detects or outputs the grains that have not been crushed via a USB StreamCam with an AI, so that 
               engineers can subsequently use these results for optimal process parameter settings.'
               label='AI-Camera'
-              path='/contact'
+              path='/projekt'
             />
             </div>
      
+
+            
+            <h2>read more about the project: </h2>
+            <div className= "links">
+               <p> KIPro: <a href="http://www.kipro-projekt.de/">http://www.kipro-projekt.de/</a></p>
+               <p> ecoKI: <a href="https://www.ecoki.de/">https://www.ecoki.de/</a></p>
+            </div>
+            <br></br>
      <Footer></Footer>
         </>
+
+
     );
 
 
 
 };
+
+
 
 export default Projekt;

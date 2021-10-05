@@ -11,7 +11,9 @@
  }
 
  .left {
-   margin-left: 40px;
+   margin-left: -220px;
+  padding-left: 250px;
+   
  }
 
 h3 {

@@ -49,17 +49,8 @@ function Navbar() {
             </div>
             <ul className={click ? 'nav-menu active' : 'nav-menu'}>
               <li className='nav-item'>
-                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                  Menu 2
-                </Link>
-              </li>
-              <li className='nav-item'>
-                <Link
-                  to='/add'
-                  className='nav-links'
-                  onClick={closeMobileMenu}
-                >
-                  add
+                <Link to='/add' className='nav-links' onClick={closeMobileMenu}>  
+                  Add
                 </Link>
               </li>
               <li className='nav-item'>
@@ -68,13 +59,33 @@ function Navbar() {
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  add-Evaluation
+                  Detection 
                 </Link>
               </li>
+              <li className='nav-item'>
+                <Link
+                  to='/projekt' 
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
+                  Project
+                </Link>
+              </li>
+           
+              <li className='nav-item'>
+              <Link
+                to='/contact'
+                className='nav-links'
+                onClick={closeMobileMenu}
+              >
+                Contact
+              </Link>
+            </li>
             </ul>
             {
             <Link to="/login" className="btn btn-primary" 
             //onClick={closeMobileMenu}
+            // Menu 2 mit '/' link
             >Sign out</Link>
 
          
@@ -113,7 +124,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Projekt
+                Project
               </Link>
             </li>
             <li className='nav-item'>

@@ -1,14 +1,21 @@
 .cards {
 
 
-    padding-right: 400px;
-    padding-left: 400px;
+    padding-right: 500px;
+    padding-left: 500px;
     padding-bottom: 200px;
 }
 
-/*
-.card1{
-    padding-top: 200px;
-    padding-bottom: 200px;
+.links {
+
+    text-align: left;
+    padding-left: 655px;
+    color: green;
+    font-weight: bold;
+
 }
-*/
+
+h2 {
+     padding-left: 400px;
+ 
+}

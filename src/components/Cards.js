@@ -10,18 +10,17 @@ function Cards() {
         <div className='cards__wrapper'>
           <ul className='cards__items'>
             <CardItem
-              src='images/img-9.jpg'
-              text=' In the Fu2-Experte project, researchers at the University of Bremen are working together with a feed manufacturer in Lower Saxony to 
-              feed manufacturer to increase the energy efficiency of the animal feed production process.'
-              label='Fu2-Experte'
+              src='images/img-8.jpg'
+              text=' 
+              ecoKI is an online platform with the goal of enabling a low-threshold and fast entrance of AI for 
+              the increase of energy efficiency in the production.'
+              label='ecoKI'
               path='/projekt'
             />
             <CardItem
               src='images/img-2.jpg'
-              text='The company Austing Mischfutterwerk GmbH & Co. KG produces compound feed.
-              With the relatively small number of employees, the considerable production figures (245,000 tons per year) can be achieved 
-              because all processes are highly mechanized and automated.'
-              label='Austing'
+              text='The KIPro project is investigating how an AI-supported platform can improve energy efficiency in industrial plants.'
+              label='KIPro'
               path='/projekt'
             />  
           </ul>
@@ -39,14 +38,14 @@ function Cards() {
               the help of an AI camera. 
               Grain are to be detected with the aid of an AI camera.'
               label='AI-Camera'
-              path='/products'
+              path='/projekt'
             />
            
           </ul>
 
       <br></br> <br></br>
         <p>
-          <h3>The complete code to the website and tracker is open source and can be found <a href="https://github.com/JHamudi/Lehrprojekt_21-22/tree/master">here</a>.</h3>
+          <h3>The complete code to the website and tracker is open source and can be found <a href="https://github.com/JHamudi/BatchProcesses-AutomaticProductFeaturesCollection/tree/main">here</a>.</h3>
         </p>
      
          

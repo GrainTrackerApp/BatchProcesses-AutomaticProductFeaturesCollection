@@ -27,10 +27,10 @@ function Footer() {
           
           <div class='footer-link-items'>
             <h3>Social Media</h3>
-            <a href="https://www.instagram.com/_ibrah__/?hl=de">Instagram</a>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <a href="">Instagram</a>  
+            <a href="">Facebook</a>  
+            <a href="">Youtube</a>  
+            <a href="">Twitter</a>  
           </div>
         </div>
       </div>

@@ -1,12 +1,18 @@
 import axios from 'axios';
 import './add.css';
 import React, {Component} from "react";
+import { useHistory } from "react-router-dom";
 
+import Navbar from "../../components/Navbar";
 
 import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import Header from '../../components/Header';
+
+
 
 
 const onFileChange = (e) => {
+  
 	const file = e.target.files[0]
 	const storageRef = Add.storage().ref()
 	const fileRef = storageRef.child(file.name)
@@ -48,6 +54,9 @@ const data = [
 
 ];
 
+
+
+
 class Add extends Component {
 
 
@@ -55,12 +64,15 @@ class Add extends Component {
 	render() {
 	
 	return (
-	
+    <>
+         <Navbar />
 
-		
 
 		<div className="App">
 			<div>
+      <div class="return"></div>
+
+
 			<h2>number of broken/unbroken grains</h2>
 			   <ResponsiveContainer width="50%" aspect={2}>
         <BarChart
@@ -79,8 +91,9 @@ class Add extends Component {
           <YAxis />
           <Tooltip />
 		  <br></br>
+
 		  <Legend />
-  
+
           <Bar dataKey="bg" fill="#8884d8" />    // bg: broken grains
           <Bar dataKey="ug" fill="#82ca9d" /> // ug: unbroken grains"
         </BarChart>
@@ -88,7 +101,9 @@ class Add extends Component {
       </ResponsiveContainer>
 	
 
-	
+      <br></br>
+
+
 	<form onSubmit={onSubmit}>
 		<input type ="file" onChange={onFileChange}/>
 		<input type ="text" name ="username" placeholder="NAME"/>
@@ -96,9 +111,19 @@ class Add extends Component {
 	</form>
 	</div>
 	</div>
+
+  
+
+
+
+  </>
 	
 	);
+
+  
 	}
+
+
 }
 
 export default Add;
