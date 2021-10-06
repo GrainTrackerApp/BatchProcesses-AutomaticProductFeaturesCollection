@@ -12,7 +12,7 @@ In a compound feed mill, after the grain crushing process, the unbroken grain ce
 <br>
 
 
-## <a href="https://tracker-2baa0.firebaseapp.com/Menu">Global link to the website</a>
+## <a href="https://tracker-2baa0.firebaseapp.com/Menu">Visit this site here!</a>
 <br>
 
 ## Available Scripts
