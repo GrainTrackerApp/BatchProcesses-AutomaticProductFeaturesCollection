@@ -208,6 +208,18 @@ let data = [
       </div>
       </div>
 
+<br></br>
+
+  <div>
+<h4> Description: </h4>
+  <p>
+  Here you can visualize your evaluations from Detection as a dashboard. <br></br>
+    To do this, enter the number of the specific broken grain type at bg <b>(bg: broken grain)</b>
+    and the number of the specific unbroken grain type at ug <b>(ug: unbroken grain)</b>. <br></br>
+    In order to include the value in the dashboard, you must press the corresponding button.
+  </p>
+  </div>
+
 
 
 
