@@ -8,7 +8,15 @@ margin-left: 250px;
     
 }
 
+.containers {
+padding-left: 350px;
+}
+
 #Add-headline {
     margin-top: 50px;
     margin-Bottom: 100px; 
   }
+
+.values {
+    text-align: left;
+}

@@ -15,15 +15,24 @@ class AddEvaluation extends React.Component {
 
       return (
        
+        
        <div className= "Detection">
  <>             <Navbar />
+ <br></br> <br></br> <br></br>
+                <br></br> <br></br> <br></br>
+ <br></br>
+ <a className= "link" target="_blank" rel="noopener noreferrer" href="http://127.0.0.1:8000/grain_project/get_res/">Image Detection Site!</a>
              
                 <br></br> <br></br> <br></br>
-
-                <ObjectDetector />
                 <br></br> <br></br> <br></br>
                 <br></br> <br></br> <br></br>
-
+                <br></br> <br></br> <br></br>
+                <br></br> <br></br> <br></br>
+                <br></br> <br></br> <br></br>
+                {/*<ObjectDetector />
+                <br></br> <br></br> <br></br>
+                <br></br> <br></br> <br></br>
+                */  }
                 <Footer />
                 </>
         

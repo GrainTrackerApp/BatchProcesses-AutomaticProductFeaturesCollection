@@ -59,7 +59,7 @@ function Navbar() {
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
-                  Detection 
+                 Image Detection 
                 </Link>
               </li>
               <li className='nav-item'>

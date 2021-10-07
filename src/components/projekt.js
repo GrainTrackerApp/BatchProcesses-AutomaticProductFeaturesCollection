@@ -73,7 +73,7 @@ const Projekt = () => {
      
 
             
-            <h2>read more about the project: </h2>
+            <h2>Read more about the project: </h2>
             <div className= "links">
                <p> KIPro: <a href="http://www.kipro-projekt.de/">http://www.kipro-projekt.de/</a></p>
                <p> ecoKI: <a href="https://www.ecoki.de/">https://www.ecoki.de/</a></p>

@@ -13,7 +13,8 @@ function Cards() {
               src='images/img-8.jpg'
               text=' 
               ecoKI is an online platform with the goal of enabling a low-threshold and fast entrance of AI for 
-              the increase of energy efficiency in the production.'
+              the increase of energy efficiency in the production.
+              '
               label='ecoKI'
               path='/projekt'
             />
