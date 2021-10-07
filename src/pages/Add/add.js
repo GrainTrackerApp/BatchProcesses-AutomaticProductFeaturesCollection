@@ -24,7 +24,14 @@ const onFileChange = (e) => {
       e.preventDefault()
     }
     
-
+var MAIZE_BG = 0
+var MAIZE_UG = 0
+var ROGGEN_BG = 0
+var ROGGEN_UG = 0
+var TRITICALE_BG = 0
+var TRITICALE_UG = 0
+var WHEAT_BG = 0
+var WHEAT_UG = 0
 
 function Add() {
 
@@ -32,41 +39,85 @@ function Add() {
   const [print, setPrint] = useState(false)
   function getData(val){
   
+    console.log(val)
     setData(val.target.value)
     setPrint(false)
     console.warn(val.target.value)
     }
   
+    
+    // ### MAIZE ###
+      function updateMAIZE_BG(val){
+        setPrint(false)
+        MAIZE_BG = val.target.value   
+      }
+  
+      function updateMAIZE_UG(val){
+        setPrint(false)
+        MAIZE_UG = val.target.value 
+      }
+  
+       // ### ROGGEN ###
+        function updateROGGEN_BG(val){
+          setPrint(false)
+          ROGGEN_BG = val.target.value   
+        }
+    
+        function updateROGGEN_UG(val){
+          setPrint(false)
+          ROGGEN_UG = val.target.value 
+        }
+
+        // ### TRITICALE ###
+        function updateTRITICALE_BG(val){
+          setPrint(false)
+          TRITICALE_BG = val.target.value   
+        }
+    
+        function updateTRITICALE_UG(val){
+          setPrint(false)
+          TRITICALE_UG = val.target.value 
+        }
+
+        // ### WHEAT ###
+        function updateWHEAT_BG(val){
+          setPrint(false)
+          WHEAT_BG = val.target.value   
+        }
+    
+        function updateWHEAT_UG(val){
+          setPrint(false)
+          WHEAT_UG = val.target.value 
+        }
+
 
 let data = [
   {   
     name: 'Maize',
-    bg: 200,
-    ug: 240,
+    bg: MAIZE_BG,
+    ug: MAIZE_UG,
 
   },
   {
     name: 'Roggen',
-    bg: 300,
-    ug: 140,
+    bg: ROGGEN_BG,
+    ug: ROGGEN_UG,
 
   },
   {
     name: 'Triticale',
-    bg: 200,
-    ug: 180,
+    bg: TRITICALE_BG,
+    ug: TRITICALE_UG,
 
   },
   {
     name: 'Wheat',
-    bg: 278,
-    ug: 390,
+    bg: WHEAT_BG,
+    ug: WHEAT_UG,
 
   },
 
 ];
-
-
 
 
 	
@@ -114,28 +165,47 @@ let data = [
 	
 
       <br></br>
-      {
-        print?
-       <h1>{datas}</h1> 
-        :null
-      }
-      <div>
-      <button onClick={()=>setPrint(true)}> Maize </button>
-      <input type="text" onChange= {getData}/>
+      
+
+    
+<div class="wrapper">
+      <div id="first">
+     
+        <button onClick={()=>setPrint(true) }> Maize bg </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateMAIZE_BG}/>
+    <div className= "divider"></div>
+        <button onClick={()=>setPrint(true)}> Maize ug </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateMAIZE_UG}/>
+      <br></br><br></br>
+        <button onClick={()=>setPrint(true)}> Roggen bg </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateROGGEN_BG}/>
+        <div className= "divider"></div>
+        <button onClick={()=>setPrint(true)}> Roggen ug </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateROGGEN_UG}/>
+      </div>
       <br></br>
-      <br></br>
-      <button onClick={()=>setPrint(true)}> Roggen </button>
-      <input type="text" onChange= {getData}/>
-      <br></br>
-      <br></br>
-      <button onClick={()=>setPrint(true)}> Triticale </button>
-      <input type="text" onChange= {getData}/>
-      <br></br>
-      <br></br>
-      <button onClick={()=>setPrint(true)}> Wheat </button>
-      <input type="text" onChange= {getData}/>
-      <br></br>
-      <br></br>
+      <div id="second">
+        <button onClick={()=>setPrint(true)}>  Triticale bg </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateTRITICALE_BG}/>
+        <div className= "divider"></div>
+        <button onClick={()=>setPrint(true)}> Triticale ug </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateTRITICALE_UG}/>
+        <br></br><br></br>
+        <button onClick={()=>setPrint(true)}> Wheat bg </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateWHEAT_BG}/>
+        <div className= "divider"></div>
+        <button onClick={()=>setPrint(true)}> Wheat ug </button>
+        <div className= "dividerSmall"></div>
+        <input type="text" onChange= {updateWHEAT_UG}/>
+        <br></br>
+      </div>
       </div>
 
 

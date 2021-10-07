@@ -20,3 +20,27 @@ padding-left: 350px;
 .values {
     text-align: left;
 }
+
+.wrapper {
+    
+    position: center;
+ }
+ #first {
+     
+ }
+ #second {
+     
+
+ }
+
+ .dividerSmall{
+    width:5px;
+    height:auto;
+    display:inline-block;
+}
+
+ .divider{
+    width:20px;
+    height:auto;
+    display:inline-block;
+}
