@@ -45,12 +45,12 @@ padding-left: 350px;
     display:inline-block;
 }
 
-h4 {
-    
+#center {
+    font-weight: bold;
     margin-right: 518px;
 }
 
-p {
+.textD {
     margin-right: 300px;
     padding-left: 420px;
     text-align: left;
